@@ -33,7 +33,7 @@ document.onreadystatechange = function() {
 
 function getWeather() {
   //code that fetches API data and stores it in results
-  let url = "http://api.openweathermap.org/data/2.5/weather?zip=<zipCode>&us&appid=<appId>";
+  let url = "https://api.openweathermap.org/data/2.5/weather?zip=<zipCode>&us&appid=<appId>";
   url = url.replace("<zipCode>", zipInput.value);
   url = url.replace("<appId>", appId);
   //code that fetches data from the API URL and stores it in results.
