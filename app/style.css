@@ -18,4 +18,11 @@
 
 h1, h2, h3, h4, h5 {
   color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+#date {
+  color: #D3D3D3;
+  font-weight:bold;
+  font-family: 'Roboto Mono', monospace;
 }
