@@ -12,51 +12,56 @@
 </head>
 
 <body>
+
   <div class="container">
 
-    <div>
-      <nav class="navbar">
-        <a class="navbar-brand" href="#">
-      		    <strong>Weather</strong>App
-      		  </a>
-        <span id="date" style="color:#000000;font-weight:bold" </span>
-      </nav>
-    </div>
+    <div class="bg" id="bg">
+      <div>
+        <nav class="navbar navbar-dark bg-dark" style="background-color: #e3f2fd;">
+        <span class="navbar-text" style="color:#D3D3D3"><strong>Weather</strong>App</span>
+        <span id="date" style="color:#D3D3D3;font-weight:bold"> </span>
+      </div>
 
-    <div class="row">
-      <div class="col-sm-6">
-        <input id="zipInput" class="form-control" placeholder="Enter your zip code">
-        <h5 id="city">city</h5>
+      <div class="row">
+        <div class="col-sm-6">
+          <input id="zipInput" class="form-control" placeholder="Zip code">
+          <button id="weatherButton" class="btn btn-info btn-sm" type="button">Get Weather</button>
+        </div>
       </div>
-      <div class="col-sm-6">
-        <button id="weatherButton" class="btn btn-success" type="button">Get Weather</button>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <h4 id="city">city</h4>
+        </div>
       </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h1 id="tempF">Temperature</h1>
     </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <h1 id="tempF">Temperature</h1>
-      </div>
-      <div class="col-sm-6">
-        <h5 id="highTemp">High Temp</h5>
-        <h5 id="lowTemp">Low Temp</h5>
-      </div>
+    <div class="col-sm-6">
+      <h5 id="highTemp">High Temp</h5>
+      <h5 id="lowTemp">Low Temp</h5>
     </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <h2 id="condition">Condition</h2>
-      </div>
-      <div class="col-sm-6">
-        <h5 id="humidity">Humidity</h5>
-        <h5 id="wind">Wind</h5>
-      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h2 id="condition">Condition</h2>
     </div>
-    <!-- <div>
-      <img alt='' src='' id='weatherImage' width='300'>
+    <div class="col-sm-6">
+      <h5 id="humidity">Humidity</h5>
+      <h5 id="wind">Wind</h5>
+    </div>
+  </div>
+
+  <!-- <div class="card mb-3">
+      <div class="card-body text-center">
+        <img alt='' src='' id='weatherImage' width='300'>
+        <p>picture</p>
+      </div>
     </div> -->
-
-
-
-
+  </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
