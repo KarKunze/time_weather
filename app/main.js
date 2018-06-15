@@ -1,7 +1,7 @@
 
   setInterval(myTimer, 1000);
   function myTimer(){
-    var currentDate = new Date();
+    let currentDate = new Date();
     document.getElementById("date").innerHTML = currentDate.toLocaleString();
   }
 
@@ -83,6 +83,7 @@ function catchResponse() {
     let mph = MperS * 2.2369;
     return Math.round(mph*10)/10;
   }
+
 
   function displayImage(condition) {
     if (condition.toLowerCase().includes("clouds")) {

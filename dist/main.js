@@ -1,7 +1,13 @@
-let currentDate = new Date();
-let dateStr = currentDate.toLocaleString();
-document.getElementById("date").innerHTML = dateStr;
 
+  setInterval(myTimer, 1000);
+  function myTimer(){
+    var currentDate = new Date();
+    document.getElementById("date").innerHTML = currentDate.toLocaleString();
+  }
+
+// let currentDate = new Date();
+// let dateStr = currentDate.toLocaleString();
+// document.getElementById("date").innerHTML = dateStr;
 
 let date = document.getElementById("date");
 let city = document.getElementById("city");
