@@ -107,26 +107,26 @@ function catchResponse() {
     else if (condition.toLowerCase().includes("snow") && hr >= 5 && hr <= 20) {
       return 'url("images/abstract-blur-bright-286198 (1).jpg")';
     }
-    else if (condition.toLowerCase().includes("clouds") && hr > 20 && hr < 5) {
+    else if (condition.toLowerCase().includes("clouds") && (hr < 5 || hr > 20)) {
       return 'url("images/nightclouds.jpg")';
     }
-    else if (condition.toLowerCase().includes("rain") && hr > 20 && hr < 5) {
+    else if (condition.toLowerCase().includes("rain") && (hr < 5 || hr > 20)) {
       return 'url("images/nightrain.jpg")';
     }
-    else if (condition.toLowerCase().includes("clear") && hr > 20 && hr < 5) {
+    else if (condition.toLowerCase().includes("clear") && (hr < 5 || hr > 20)) {
       return 'url("images/galaxy-infinity-milky-way-110854.jpg")';
     }
-    else if (condition.toLowerCase().includes("thunderstorm") && hr > 20 && hr < 5) {
+    else if (condition.toLowerCase().includes("thunderstorm") && (hr < 5 || hr > 20)) {
       return 'url("images/nightstorm.jpg")';
     }
-    else if (condition.toLowerCase().includes("drizzle") && hr > 20 && hr < 5) {
+    else if (condition.toLowerCase().includes("drizzle") && (hr < 5 || hr > 20)) {
       return 'url("images/nightrain.jpg")';
     }
-    else if (condition.toLowerCase().includes("snow") && hr > 20 && hr < 5) {
+    else if (condition.toLowerCase().includes("snow") && (hr < 5 || hr > 20)) {
       return 'url("images/darksnow.jpg")';
     }
     else {
-      return 'url("images/foggy.jpg")';
+      return 'url("images/fogmist.jpg")';
     }
 
   }

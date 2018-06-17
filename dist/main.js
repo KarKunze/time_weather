@@ -1,7 +1,7 @@
 
   setInterval(myTimer, 1000);
   function myTimer(){
-    var currentDate = new Date();
+    let currentDate = new Date();
     document.getElementById("date").innerHTML = currentDate.toLocaleString();
   }
 
@@ -84,27 +84,49 @@ function catchResponse() {
     return Math.round(mph*10)/10;
   }
 
+
   function displayImage(condition) {
-    if (condition.toLowerCase().includes("clouds")) {
-      return 'url("images/blue-clouds-day-53594.jpg")';
+    let now = new Date();
+    let hr = now.getHours();
+
+    if (condition.toLowerCase().includes("clouds") && hr >= 5 && hr <= 20) {
+      return 'url("images/clouds.jpg")';
     }
-    else if (condition.toLowerCase().includes("rain")) {
+    else if (condition.toLowerCase().includes("rain") && hr >= 5 && hr <= 20) {
       return 'url("images/abstract-background-blue-311039.jpg")';
     }
-    else if (condition.toLowerCase().includes("clear")) {
+    else if (condition.toLowerCase().includes("clear") && hr >= 5 && hr <= 20) {
       return 'url("images/air-atmosphere-blue-96622.jpg")';
     }
-    else if (condition.toLowerCase().includes("thunderstorm")) {
+    else if (condition.toLowerCase().includes("thunderstorm") && hr >= 5 && hr <= 20) {
       return 'url("images/cloudiness-clouds-cloudscape-1074428.jpg")';
     }
-    else if (condition.toLowerCase().includes("mist")) {
-      return 'url("images/blur-calm-waters-dawn-395198 (1).jpg")';
+    else if (condition.toLowerCase().includes("drizzle") && hr >= 5 && hr <= 20) {
+      return 'url("images/abstract-background-blue-311039.jpg")';
     }
-    else if (condition.toLowerCase().includes("snow")) {
+    else if (condition.toLowerCase().includes("snow") && hr >= 5 && hr <= 20) {
       return 'url("images/abstract-blur-bright-286198 (1).jpg")';
     }
-    else {
+    else if (condition.toLowerCase().includes("clouds") && (hr < 5 || hr > 20)) {
+      return 'url("images/nightclouds.jpg")';
+    }
+    else if (condition.toLowerCase().includes("rain") && (hr < 5 || hr > 20)) {
+      return 'url("images/nightrain.jpg")';
+    }
+    else if (condition.toLowerCase().includes("clear") && (hr < 5 || hr > 20)) {
       return 'url("images/galaxy-infinity-milky-way-110854.jpg")';
+    }
+    else if (condition.toLowerCase().includes("thunderstorm") && (hr < 5 || hr > 20)) {
+      return 'url("images/nightstorm.jpg")';
+    }
+    else if (condition.toLowerCase().includes("drizzle") && (hr < 5 || hr > 20)) {
+      return 'url("images/nightrain.jpg")';
+    }
+    else if (condition.toLowerCase().includes("snow") && (hr < 5 || hr > 20)) {
+      return 'url("images/darksnow.jpg")';
+    }
+    else {
+      return 'url("images/fogmist.jpg")';
     }
 
   }
