@@ -93,7 +93,7 @@ function catchResponse() {
       return 'url("images/clouds.jpg")';
     }
     else if (condition.toLowerCase().includes("rain") && hr >= 5 && hr <= 20) {
-      return 'url("images/abstract-background-blue-311039.jpg")';
+      return 'url("images/rain.jpg")';
     }
     else if (condition.toLowerCase().includes("clear") && hr >= 5 && hr <= 20) {
       return 'url("images/air-atmosphere-blue-96622.jpg")';
@@ -102,7 +102,7 @@ function catchResponse() {
       return 'url("images/cloudiness-clouds-cloudscape-1074428.jpg")';
     }
     else if (condition.toLowerCase().includes("drizzle") && hr >= 5 && hr <= 20) {
-      return 'url("images/abstract-background-blue-311039.jpg")';
+      return 'url("images/rain.jpg")';
     }
     else if (condition.toLowerCase().includes("snow") && hr >= 5 && hr <= 20) {
       return 'url("images/abstract-blur-bright-286198 (1).jpg")';
